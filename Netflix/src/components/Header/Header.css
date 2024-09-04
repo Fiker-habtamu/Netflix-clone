@@ -1,0 +1,31 @@
+.header-outer{
+    position: static;
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 14, 14);
+    /* background-color: transparent; */
+    height: 10vh;
+    color: #fff;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+    /* background-color: red; */
+}
+.header-inner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left-ul{
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.header-right-ul{
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

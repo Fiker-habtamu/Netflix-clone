@@ -1,0 +1,22 @@
+.footer-container{
+    width: 75%;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.footer-container h4{
+    font-weight: 200;
+    margin: 10px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.the-icons ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 130px;
+}
+.first-footer-row h4:nth-child(5){
+    border: 1px white solid;
+        text-align: center;
+}
