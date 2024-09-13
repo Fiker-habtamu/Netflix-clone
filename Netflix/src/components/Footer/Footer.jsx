@@ -7,6 +7,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <>
+    <div className='top-margin'></div>
       <div className="footer-container">
         <div className="footer-content">
           <div className="first-footer-row">
