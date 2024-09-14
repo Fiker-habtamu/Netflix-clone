@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     background-color: rgb(15, 14, 14);
-    /* background-color: transparent; */
+    background-color: transparent;
     height: 10vh;
     color: #fff;
     transition: all 0.5s;

@@ -46,7 +46,22 @@ const handleClick = (movie) =>{
       <div className="row">
         <h1>{title}</h1>
         <div className="row_posters">
-          {movies?.map((movie, index) => (
+          {movies && movies.length > 0
+            ? movies?.map((movie, index) =>
+                movie.backdrop_path !== null && movie.poster_path !== null ? (
+                  <img
+                    onClick={() => handleClick(movie)}
+                    key={index}
+                    src={`${base_url}${
+                      isLargeRow ? movie.poster_path : movie.backdrop_path
+                    }`}
+                    alt={movie.name}
+                    className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                  />
+                ) : null
+              )
+            : null}
+          {/* {movies?.map((movie, index) => (
             <img
               onClick={() => handleClick(movie)}
               key={index}
@@ -56,7 +71,7 @@ const handleClick = (movie) =>{
               alt={movie.name}
               className={`row_poster ${isLargeRow && "row_posterLarge"}`}
             />
-          ))}
+          ))} */}
         </div>
         <div style={{ padding: "40px" }}>
           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
