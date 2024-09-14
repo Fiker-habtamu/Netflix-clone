@@ -8,8 +8,7 @@ const Banner = () => {
         (async () => {
             try{
                 const request = await axios.get(requests.fetchNetflixOriginals
-                ); 
-                console.log(await axios.get(requests.fetchNetflixOriginals));
+                )
                 setMovie(request.data.results[
                     Math.floor(Math.random() * request.data.results.length)
                 ]);               
