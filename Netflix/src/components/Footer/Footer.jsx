@@ -3,6 +3,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import './Footer.css'
+import '../Header/bootstrap.css'
 
 const Footer = () => {
   return (

@@ -23,7 +23,7 @@
 .row_posterLarge:hover{
     transform: scale(1.09);
 }
-.row{
+.my-row{
     margin-left: 20px;
     color: white;
 }

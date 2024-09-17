@@ -43,7 +43,7 @@ const handleClick = (movie) =>{
   }; 
   return (
     <>
-      <div className="row">
+      <div className="my-row">
         <h1>{title}</h1>
         <div className="row_posters">
           {movies && movies.length > 0
